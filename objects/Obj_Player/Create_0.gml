@@ -14,9 +14,9 @@ vida_maxima = global.vida_maxima;
 vida_atual = global.vida_atual;
 
 // Variáveis de movimento
-velocidade = 5;
+velocidade = 4;
 gravidade = 0.3;
-forca_pulo = -7;
+forca_pulo = -5.5;
 qtd_pulos = 0;
 max_pulos = 2;
 
@@ -96,6 +96,7 @@ function input_player()
 		{
 			velv = forca_pulo;
 			qtd_pulos--;
+			audio_play_sound(sound_pulo,2,false)
 		}
 	}
 	else
@@ -105,6 +106,7 @@ function input_player()
 			qtd_pulos = 1;
 			velv = forca_pulo;
 			qtd_pulos--;
+			audio_play_sound(sound_pulo,2,false)
 		}
 		
 		velv += gravidade;
@@ -117,6 +119,7 @@ function input_player()
 			{
 				velv = forca_pulo;
 				velh = (10 * _xDirection)*-1;
+				audio_play_sound(sound_pulo,2,false)
 				
 			}
 		}

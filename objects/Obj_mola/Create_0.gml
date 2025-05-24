@@ -1,2 +1,2 @@
-forca_mola = 18.5;
+forca_mola = 16.5;
 flag_colisao = false;
