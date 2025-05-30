@@ -30,7 +30,7 @@
   "origin":4,
   "parent":{
     "name":"Mask Dude",
-    "path":"folders/Sprites/player/Mask Dude.yy",
+    "path":"folders/Sprites/Interface/botoes/player/Mask Dude.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

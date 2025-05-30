@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Pink Man",
-    "path":"folders/Sprites/player/Pink Man.yy",
+    "path":"folders/Sprites/Interface/botoes/player/Pink Man.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

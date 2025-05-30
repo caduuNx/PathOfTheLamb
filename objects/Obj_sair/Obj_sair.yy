@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_botao",
-    "path":"sprites/spr_botao/spr_botao.yy",
+    "name":"Bot_o_Sair",
+    "path":"sprites/Bot_o_Sair/Bot_o_Sair.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"player",
-    "path":"folders/Sprites/player.yy",
+    "path":"folders/Sprites/Interface/botoes/player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

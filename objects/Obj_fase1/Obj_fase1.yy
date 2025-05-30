@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_botao",
-    "path":"sprites/spr_botao/spr_botao.yy",
+    "name":"Grupo_Fase_1",
+    "path":"sprites/Grupo_Fase_1/Grupo_Fase_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Virtual Guy",
-    "path":"folders/Sprites/player/Virtual Guy.yy",
+    "path":"folders/Sprites/Interface/botoes/player/Virtual Guy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

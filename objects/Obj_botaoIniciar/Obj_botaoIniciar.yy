@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_botao",
-    "path":"sprites/spr_botao/spr_botao.yy",
+    "name":"Bot_o_Jogar",
+    "path":"sprites/Bot_o_Jogar/Bot_o_Jogar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_botao",
-    "path":"sprites/spr_botao/spr_botao.yy",
+    "name":"Bot_o_Engrenagem___Configura__es",
+    "path":"sprites/Bot_o_Engrenagem___Configura__es/Bot_o_Engrenagem___Configura__es.yy",
   },
   "spriteMaskId":null,
   "visible":true,

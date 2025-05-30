@@ -34,6 +34,20 @@ sprite_walljump = sprite_mask_walljump;
 sprite_fall = sprite_mask_fall;
  
 
+if (variable_global_exists("room_voltar")) {
+    if (room == global.room_voltar) {
+        if (variable_global_exists("player_x")) {
+            x = global.player_x;
+            y = global.player_y;
+        }
+
+        // Elimina os dados depois de restaurar
+        global.room_voltar = noone;
+        global.player_x = -1;
+        global.player_y = -1;
+    }
+}
+
 function input_player()
 {
 
@@ -51,6 +65,8 @@ function input_player()
 	
 	var _no_chao = place_meeting(x,y+1,Obj_Bloco);
 	var _na_parede = place_meeting(x+(_xDirection),y,Obj_Bloco);
+	
+
 	
 	if(_xDirection != 0)
 	{
@@ -96,7 +112,9 @@ function input_player()
 		{
 			velv = forca_pulo;
 			qtd_pulos--;
-			audio_play_sound(sound_pulo,2,false)
+		var efeito_id = audio_play_sound(sound_pulo, 0, false);
+audio_sound_gain(efeito_id, global.sfx_volume, 0);
+
 		}
 	}
 	else
@@ -106,7 +124,9 @@ function input_player()
 			qtd_pulos = 1;
 			velv = forca_pulo;
 			qtd_pulos--;
-			audio_play_sound(sound_pulo,2,false)
+			var efeito_id = audio_play_sound(sound_pulo, 0, false);
+audio_sound_gain(efeito_id, global.sfx_volume, 0);
+
 		}
 		
 		velv += gravidade;
@@ -119,7 +139,9 @@ function input_player()
 			{
 				velv = forca_pulo;
 				velh = (10 * _xDirection)*-1;
-				audio_play_sound(sound_pulo,2,false)
+				var efeito_id = audio_play_sound(sound_pulo, 0, false);
+audio_sound_gain(efeito_id, global.sfx_volume, 0);
+
 				
 			}
 		}

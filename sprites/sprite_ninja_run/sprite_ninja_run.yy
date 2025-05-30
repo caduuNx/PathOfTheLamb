@@ -37,7 +37,7 @@
   "origin":7,
   "parent":{
     "name":"Ninja Frog",
-    "path":"folders/Sprites/player/Ninja Frog.yy",
+    "path":"folders/Sprites/Interface/botoes/player/Ninja Frog.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
