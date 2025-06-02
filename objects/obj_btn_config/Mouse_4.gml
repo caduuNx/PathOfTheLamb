@@ -1,4 +1,9 @@
-show_debug_message("Clique detectado");
+// Tocar som do botão
+var efeito_id = audio_play_sound(sound_botao, 0, false);
+audio_sound_gain(efeito_id, global.sfx_volume, 0);
+
+// Aqui você continua com a ação do botão (ex: mudar sala, sair do jogo, etc.)
+
 
 // Salva a room atual
 global.room_voltar = room;
@@ -12,4 +17,4 @@ if (object_exists(Obj_Player)) {
 }
 
 // Vai para a room de configurações
-room_goto(RoomConfigmenu);
+transicao_simples(RoomConfigmenu);

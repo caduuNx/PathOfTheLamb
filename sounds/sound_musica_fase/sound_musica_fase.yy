@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":133.39201,
+  "duration":137.1951,
   "name":"sound_musica_fase",
   "parent":{
     "name":"Sons",

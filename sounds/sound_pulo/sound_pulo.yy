@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.7760091,
+  "duration":0.88816327,
   "name":"sound_pulo",
   "parent":{
     "name":"Sons",

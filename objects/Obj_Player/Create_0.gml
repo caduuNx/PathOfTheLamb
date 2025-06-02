@@ -16,9 +16,10 @@ vida_atual = global.vida_atual;
 // Variáveis de movimento
 velocidade = 4;
 gravidade = 0.3;
-forca_pulo = -5.5;
+forca_pulo = -6.;
 qtd_pulos = 0;
 max_pulos = 2;
+
 
 // Estados do jogador
 invulneravel = false;
@@ -53,9 +54,16 @@ function input_player()
 
 	var _left, _right, _jump, _xDirection;
 	
-	_left = keyboard_check(ord("A"));
-	_right = keyboard_check(ord("D"));
-	_jump = keyboard_check_pressed(ord("W"));
+	_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
+_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
+_jump = keyboard_check(vk_up) or keyboard_check_pressed(ord("W"));
+
+// Se o obj_btn_virtual_input existir, use os estados dele também
+if (instance_exists(obj_btn_virtual_input)) {
+    _left  = _left  || obj_btn_virtual_input.btn_left;
+    _right = _right || obj_btn_virtual_input.btn_right;
+    _jump  = _jump  || obj_btn_virtual_input.btn_jump;
+}
 	
 	
 	_xDirection = _right - _left;
@@ -149,3 +157,5 @@ audio_sound_gain(efeito_id, global.sfx_volume, 0);
 	
 	velh = lerp(velh,_velh, .1);
 }
+
+

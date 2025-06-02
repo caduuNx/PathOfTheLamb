@@ -2,6 +2,10 @@ if (!invulneravel) {
     global.vida_atual -= 1;
     vida_atual = global.vida_atual;
 
+    // TOCAR SOM DE HIT
+    var efeito_id = audio_play_sound(sound_hit, 0, false);
+    audio_sound_gain(efeito_id, global.sfx_volume, 0);
+
     // EMPURRÃO MAIS FORTE
     if (image_xscale > 0) {
         velh = -6; // empurra para a esquerda
@@ -16,6 +20,10 @@ if (!invulneravel) {
         tempo_invulneravel = 30;
         exit;
     }
+
+    // TOCAR SOM DE MORTE
+    var efeito_morte = audio_play_sound(sound_morte, 0, false);
+    audio_sound_gain(efeito_morte, global.sfx_volume, 0);
 
     // Morte: reinicia a vida e cria o jogador no ponto inicial
     global.vida_atual = global.vida_maxima;

@@ -1,1 +1,0 @@
-transicao_simples(RoomCreditos);
